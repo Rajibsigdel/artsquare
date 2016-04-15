@@ -1,0 +1,68 @@
+        <div class="top-spc"></div>
+
+
+        <section class="sngl-pg-tp">
+            <div class="ovlay-ban"></div>
+            <div class="container">
+                <div class="row">
+                        <div class="pg-ttl">
+                            <h1>Blog</h1>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        
+        <section class="blog-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-8 blg-lft">
+                    <% @blogs.each do |blog| %>
+                    
+                        <div class="blg-mn-lst">
+                            <div class="blg-rlv-img">
+                             <%  if blog.image_url.present? %><%=link_to image_tag(blog.image_url, :alt => blog.title), blog  %></a><% end %>
+                            </div>
+                            <div class="pblsh-dt">
+                                <ul>
+                                    <li><%
+                                    c_dat=blog.updated_at                                  
+                                    f_date=c_dat.to_formatted_s(:long)
+                                                                        
+                                     %><%= f_date%></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="blg-cnt">
+                                <div class="mn-ttl">
+                                    <h2><%= link_to blog.title, blog %></h2>
+                                </div>
+                                <p><%= truncate(strip_tags(blog.details), omision: "...", length: 200) %></p>
+                            </div>
+                            <div class="cntnu-rdng">
+                            <%= link_to 'Continue Reading...', blog %>                              
+                            </div>
+                        </div>
+                         <% end -%>
+                        
+                        
+
+
+                        <div class="pagination-blg">
+                        <%= paginate @blogs %>
+<%= page_entries_info @blogs %>
+                           
+                        </div>
+                    </div>
+
+
+                    <%= render 'sidebar' %>                  
+                </div>
+            </div>            
+        </section>
+
+

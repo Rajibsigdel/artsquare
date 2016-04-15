@@ -1,0 +1,23 @@
+<section class="artst-ban">
+            <div class="ovlay-ban"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="art-ainf-ban">
+                        <div class="art-prf-img">
+                            <img src="<%=@user.avatar.url(:middle) %>" />
+                            <h1><%=@user.first_name %><%=@user.last_name %></h1>
+                            <p><%=@user.biography %></p>
+                            <p><i class="fa fa-pad-right fa-map-marker"></i><%=@user.city %>, <%=@user.country %></p>
+                            <p>
+                                <ul>
+                                    <li><i class="fa fa-pad-right fa-users"></i>8,656 Followers</li>
+                                    <li><i class="fa fa-pad-right fa-thumbs-up"></i>25,300 Likes</li>
+                                    <li><i class="fa fa-pad-right fa-eye"></i>569,957 Views</li>
+                                </ul>
+                            </p>
+                            <p><a href="mailto:<%=@user.email %>"><%=@user.email %></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>

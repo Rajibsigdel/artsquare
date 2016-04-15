@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Sitesettings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Meta key</th>
+      <th>Meta value</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sitesettings.each do |sitesetting| %>
+      <tr>
+        <td><%= sitesetting.meta_key %></td>
+        <td><%= sitesetting.meta_value %></td>
+        <td><%= link_to 'Show', sitesetting %></td>
+        <td><%= link_to 'Edit', edit_sitesetting_path(sitesetting) %></td>
+        <td><%= link_to 'Destroy', sitesetting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sitesetting', new_sitesetting_path %>

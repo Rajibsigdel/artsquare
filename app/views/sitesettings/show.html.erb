@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Meta key:</strong>
+  <%= @sitesetting.meta_key %>
+</p>
+
+<p>
+  <strong>Meta value:</strong>
+  <%= @sitesetting.meta_value %>
+</p>
+
+<%= link_to 'Edit', edit_sitesetting_path(@sitesetting) %> |
+<%= link_to 'Back', sitesettings_path %>

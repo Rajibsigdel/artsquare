@@ -1,0 +1,46 @@
+
+ <div class="top-spc"></div>
+
+
+        <section class="sngl-pg-tp">
+            <div class="ovlay-ban"></div>
+            <div class="container">
+                <div class="row">
+                        <div class="pg-ttl">
+                            <h1>Blog Categories</h1>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+         <section class="blog-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-8 blg-lft">
+                        <div class="blg-mn-lst">
+                            <div class="blg-rlv-img">
+                            <%  if @blog.image_url.present? %><%= image_tag(@blog.image_url, :alt => @blog.title)  %></a><% end %>
+                                
+                            </div>
+                            <div class="pblsh-dt">
+                                <ul>
+                                    <li>November 25, 2015,</li>
+                                    <li>By <a href="#">Admin</a></li>
+                                </ul>
+                            </div>
+                            <div class="blg-cnt">
+                                <div class="mn-ttl">
+                                    <h2><%= @blog.title %></h2>
+                                </div>
+                                <%= raw(@blog.details) %>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <%= render 'sidebar' %>                  
+                </div>
+            </div>            
+        </section>
+

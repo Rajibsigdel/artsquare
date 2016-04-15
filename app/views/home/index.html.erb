@@ -1,0 +1,318 @@
+       <!-- featured images scroller -->
+        <section class="feat-img-hld">
+            <div class="feat-img">
+                <div class="holdr">
+                    <h1>Featured Artworks</h1>
+                </div>
+                <div class="feat-img-caro">
+                    <div id="rot-feat" class="owl-carousel">
+
+                        <div class="item">
+                            <a href="#">
+                            <div class="ft-img-hld"><%= image_tag("caro1.jpg", :alt => "caro1") %><div class="ovlay"></div></div>
+                            <div class="feat-img-inf">
+                                <h2>Trooper Helmet Concept</h2>
+                                <p>Featured work by Ryan Love</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                            <div class="ft-img-hld"><%= image_tag("caro2.jpg", :alt => "caro2") %><div class="ovlay"></div></div>
+                            <div class="feat-img-inf">
+                                <h2>Portrait of Sona</h2>
+                                <p>Featured work by Bastien Lecouffe</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                            <div class="ft-img-hld"><%= image_tag("caro3.jpg", :alt => "caro3") %><div class="ovlay"></div></div>
+                            <div class="feat-img-inf">
+                                <h2>Star Wars Fan Art</h2>
+                                <p>Featured work by Emmanuel Shiu</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                            <div class="ft-img-hld"><%= image_tag("caro4.jpg", :alt => "caro4") %><div class="ovlay"></div></div>
+                            <div class="feat-img-inf">
+                                <h2>In the Mood for Knights</h2>
+                                <p>Featured work by Raphael Lacoste</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                            <div class="ft-img-hld"><%= image_tag("caro5.jpg", :alt => "caro1") %><div class="ovlay"></div></div>
+                            <div class="feat-img-inf">
+                                <h2>Apparently it's stability</h2>
+                                <p>Featured work by Sergey Kolesov</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                            <div class="ft-img-hld"><%= image_tag("caro1.jpg", :alt => "caro1") %><div class="ovlay"></div></div>
+                            <div class="feat-img-inf">
+                                <h2>Trooper Helmet Concept</h2>
+                                <p>Featured work by Ryan Love</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                            <div class="ft-img-hld"><%= image_tag("caro2.jpg", :alt => "caro1") %><div class="ovlay"></div></div>
+                            <div class="feat-img-inf">
+                                <h2>Portrait of Sona</h2>
+                                <p>Featured work by Bastien Lecouffe</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                            <div class="ft-img-hld"><%= image_tag("caro3.jpg", :alt => "caro1") %><div class="ovlay"></div></div>
+                            <div class="feat-img-inf">
+                                <h2>Star Wars Fan Art</h2>
+                                <p>Featured work by Emmanuel Shiu</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                            <div class="ft-img-hld"><%= image_tag("caro4.jpg", :alt => "caro1") %><div class="ovlay"></div></div>
+                            <div class="feat-img-inf">
+                                <h2>In the Mood for Knights</h2>
+                                <p>Featured work by Raphael Lacoste</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                            <div class="ft-img-hld"><%= image_tag("caro5.jpg", :alt => "caro1") %><div class="ovlay"></div></div>
+                            <div class="feat-img-inf">
+                                <h2>Apparently it's stability</h2>
+                                <p>Featured work by Sergey Kolesov</p>
+                            </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- featured images scroller -->
+        <section class="tabs-all-img-hldr">
+            <div class="container">
+                <div class="row">
+                    <div class="tbs-itm">
+                        <ul>
+                            <li class="active"><a href="#">Community</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">Latest</a></li>
+                            <li><a href="#">Picks</a></li>
+                            <li><a href="#">Best of 2016</a></li>
+                            <li><a href="#"><i class="fa fa-refresh"></i>Refresh</a></li>
+                        </ul>
+                    </div>
+                    <!-- toggle categories -->
+                    <div class="tgl-hldr">
+                    <button class="tgl-button-cat" onclick="$('#tog-cat-lst').toggle();"></button>
+                    <div style="display:none;" id="tog-cat-lst">
+                    </div>
+                    </div>
+
+                    <!-- toggle categories -->
+                </div>
+            </div>
+
+             <!-- photos -->
+             <div class="img-lstr">
+             <div class="inside-section gallery" id="gallery">
+                            <div class="row gallery-masonry">
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery1.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery2.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery3.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery4.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery5.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery6.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery7.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery8.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery9.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery10.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery11.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery12.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery13.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery14.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery15.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery16.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery17.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery18.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery19.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery20.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery6.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3" alt=""  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery7.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3"  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery8.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3"  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery9.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="item col-md-15 col-sm-3"  title="">
+                                    <div class="sg-img-hldr">
+                                        <span>&nbsp;</span>
+                                        <%= image_tag("gallery1.jpg", :alt => "caro1") %>
+                                    </div>
+                                    
+                                </a>
+
+                            </div>
+                    </div>
+                    </div>
+             <!-- photos -->
+        </section>
+
+        <!-- footer section -->
+
+        

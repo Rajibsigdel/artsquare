@@ -1,0 +1,36 @@
+<div class="col-xs-6 col-md-4 blg-rgt">
+                        <div class="sdbar">
+                        <div class="sd-bar_wgt latst-pst">
+                            <h2>Latest Posts</h2>
+                            <ul>
+                            <% @recent_blogs.each do |blog| %>
+                                <li>
+                                    <span class="blg-sdbr-lnk"><%= link_to blog.title,blog %></span>
+                                    <span class="pblsh-dt-sd"><%
+                                    c_dat=blog.updated_at                                  
+                                    f_date=c_dat.strftime("%B %d, %Y")
+                                                                        
+                                     %><%= f_date%></span>
+                                </li>
+                            <% end %>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="sd-bar_wgt latst-pst">
+                            <h2>Popular Posts</h2>
+                            <ul>
+                               <% @popular_blogs.each do |blog| %>
+                                <li>
+                                    <span class="blg-sdbr-lnk"><%= link_to blog.title,blog %></span>
+                                    <span class="pblsh-dt-sd"><%
+                                    c_dat=blog.updated_at                                  
+                                    f_date=c_dat.strftime("%B %d, %Y")
+                                                                        
+                                     %><%= f_date%></span>
+                                </li>
+                            <% end %>
+                            </ul>
+                        </div>
+                        </div>
+                    </div> 

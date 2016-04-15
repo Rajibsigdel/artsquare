@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>ArtSquare</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+
+
+        <!-- ==== Favicon  === -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <!-- ==== Stylesheets  === -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <!-- Owl Carousel Assets -->
+        <link href="css/owl.carousel.css" rel="stylesheet">
+        <link href="css/owl.theme.css" rel="stylesheet">
+        <!-- Owl Carousel Assets -->
+
+
+
+
+        <!-- for scroll pane -->
+        
+        <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+
+        <style type="text/css">
+            .scroll-pane
+            {
+                width: 100%;
+                height: 100vh;
+                overflow: auto;
+            }
+        </style>
+
+        <!-- for scroll pane -->
+
+        <!-- ==== Google Fonts === -->
+
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>        
+
+        <script type="text/javascript">
+        $(document).ready(function() {
+        });
+        $(window).on("load", function() {
+           var $grid = $('.gallery-masonry');
+
+                    $grid.shuffle({
+                        itemSelector: '.item',
+                        gutterWidth: 0
+                    });
+        });
+        </script>
+
+    </head>
+    <body>
+        <!-- header -->
+        <header>            
+            <div class="hdr-tp">
+                <div class="mn-cntr">
+                <div class="logo"><a href="#"><img src="images/logo.png"></a></div>
+
+                <!-- main menu -->
+                <div class="mn-mnu">
+                    <nav class="navbar navbar-default">
+                      <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                          <ul class="nav navbar-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">About</a></li>
+                            <li class="active"><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                          </ul>
+                        </div><!-- /.navbar-collapse -->
+                      </div><!-- /.container-fluid -->
+                    </nav>
+                </div>
+                <!-- main menu -->
+
+                <!-- search and social -->
+
+                <div class="srch-soc">
+                    <div class="srch-bx">
+                        <form>
+                            <input type="text" placeholder="Search"/>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- search and social -->
+
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <div class="top-spc"></div>
+
+        <section class="art-details-pg">
+            
+            <div class="art-img-det-hldr">
+
+                <div class="prv-img-lrg-lst">
+                <a href="#"><i class="fa fa-chevron-left"></i></a>
+            </div>
+            <div class="nxt-img-lrg-lst">
+                <a href="#"><i class="fa fa-chevron-right"></i></a>
+            </div>
+            
+                <div class="imgs-lstr">
+                <div class="img-lst-det"><img src="images/art-det-img1.jpg"></div>
+                <div class="img-lst-det"><img src="images/art-det-img2.jpg"></div>
+                </div>
+            </div>
+            <div class="art-info-hldr">
+                <div class="scroll-pane">
+                <div class="artst-scr-inf">
+                    <div class="prf-img-scr">
+                        <img src="images/fl-prof.jpg">
+                    </div>
+                    <div class="nm-typ">
+                        <span class="artst-nm"><a href="#">John Doe</a></span>
+                        <span class="atst-typ">3D Artist</span>
+                    </div>
+                </div>
+                <div class="img-desc">
+                    <h1>Ballet</h1>
+                    <p>Started as an anatomy practice, turned out as a nice piece.</p>
+                    <span class="pstd-dt">Posted 2 months ago</span>
+                </div>
+                <div class="img-lks-shr">
+                                <ul>
+                                    <li><i class="fa fa-pad-right fa-users"></i>8,656 Followers</li>
+                                    <li><i class="fa fa-pad-right fa-thumbs-up"></i>25,300 Likes</li>
+                                    <li><i class="fa fa-pad-right fa-eye"></i>569,957 Views</li>
+                                </ul>
+                </div>
+                <div class="share-art">
+                    <span class='st_facebook_large' displayText='Facebook'></span>
+                    <span class='st_twitter_large' displayText='Tweet'></span>
+                    <span class='st_pinterest_large' displayText='Pinterest'></span>
+                </div>
+                <div class="comments-for-art">
+                    <h2><i class="fa fa-comments"></i>Comments</h2>
+                    <div class="cmnts-lsts">
+                        <div class="cmtr-prf-img"><img src="images/fl-prof.jpg"></div>
+                        <span class="cmtr-nm"><a href="#">Phil Bale</a></span>
+                        <span class="cmtr-degin">Lead Artist at Freestylegames</span>
+                        <p>Hi Martin - is this a straight sculpt? What was the base mesh please? Great work btw</p>
+                        <span class="cmtd-dt">2 months ago</span>
+                    </div>
+                    <div class="cmnts-lsts">
+                        <div class="cmtr-prf-img"><img src="images/fl-prof.jpg"></div>
+                        <span class="cmtr-nm"><a href="#">Phil Bale</a></span>
+                        <span class="cmtr-degin">Lead Artist at Freestylegames</span>
+                        <p>Hi Martin - is this a straight sculpt? What was the base mesh please? Great work btw</p>
+                        <span class="cmtd-dt">2 months ago</span>
+                    </div>
+                    <div class="cmnts-lsts">
+                        <div class="cmtr-prf-img"><img src="images/fl-prof.jpg"></div>
+                        <span class="cmtr-nm"><a href="#">Phil Bale</a></span>
+                        <span class="cmtr-degin">Lead Artist at Freestylegames</span>
+                        <p>Hi Martin - is this a straight sculpt? What was the base mesh please? Great work btw</p>
+                        <span class="cmtd-dt">2 months ago</span>
+                    </div>
+                    <div class="cmnts-lsts">
+                        <div class="cmtr-prf-img"><img src="images/fl-prof.jpg"></div>
+                        <span class="cmtr-nm"><a href="#">Phil Bale</a></span>
+                        <span class="cmtr-degin">Lead Artist at Freestylegames</span>
+                        <p>Hi Martin - is this a straight sculpt? What was the base mesh please? Great work btw</p>
+                        <span class="cmtd-dt">2 months ago</span>
+                    </div>
+                </div>
+
+                <div class="more-port-img">
+                    <h2>More by <a href="#">John Doe</a></h2>
+                    <div class="mr-pport-imgs">
+                        <ul>
+                            <li class="port-sngl-imgs"><a href="#"><img src="images/caro1.jpg"></a></li>
+                            <li class="port-sngl-imgs"><a href="#"><img src="images/caro2.jpg"></a></li>
+                            <li class="port-sngl-imgs"><a href="#"><img src="images/caro3.jpg"></a></li>
+                            <li class="port-sngl-imgs"><a href="#"><img src="images/caro4.jpg"></a></li>
+                            <li class="port-sngl-imgs"><a href="#"><img src="images/caro5.jpg"></a></li>
+                            <li class="port-sngl-imgs"><a href="#"><img src="images/caro1.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div> 
+                <div class="spc-scrlpn"></div> 
+            </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- JAVASCRIPTS -->
+
+        <script type="text/javascript" src="js/jquery.shuffle.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/paccordion.js"></script>
+
+        <!-- the mousewheel plugin -->
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <!-- the jScrollPane script -->
+        <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+
+        <script type="text/javascript" id="sourcecode">
+            $(document).ready(function() {
+                $('.scroll-pane').jScrollPane();
+            });
+            $(window).resize(function(){
+                $('.scroll-pane').jScrollPane();
+            });
+        </script>
+
+        <!-- JAVASCRIPTS -->
+    <script>
+    $(document).ready(function() {
+      $("#rot-feat").owlCarousel({
+
+      navigation : true,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      pagination: false,
+
+      // "singleItem:true" is a shortcut for:
+      items : 5 ,
+      navigation:false
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+
+      });
+    });
+   </script>
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "5071820b-7adc-4b1c-875d-1edaefae3fc6", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+    </body>
+</html>
